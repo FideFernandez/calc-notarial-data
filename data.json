@@ -1,0 +1,2175 @@
+{
+  "_version": "2026.06",
+  "_generado": "2026-06-18T22:23:26.445Z",
+  "parametros": {
+    "_info": "Calculadora Notarial Uruguay - Parámetros del Sistema",
+    "_version": "2026.06",
+    "_ultima_actualizacion": "2026-06-01",
+    "indices": {
+      "UR": {
+        "valor": 1921.36,
+        "descripcion": "Unidad Reajustable - junio 2026",
+        "fuente": "INE / IMPO",
+        "editable": true
+      },
+      "UI": {
+        "valor": 6.47,
+        "descripcion": "Unidad Indexada - junio 2026",
+        "fuente": "BCU / IMPO",
+        "editable": true
+      },
+      "BPC": {
+        "valor": 6864,
+        "descripcion": "Base de Prestaciones y Contribuciones 2026",
+        "fuente": "BPS",
+        "editable": true
+      },
+      "USD": {
+        "valor": 40.35,
+        "descripcion": "Cotización dólar estadounidense (venta) - referencia",
+        "fuente": "BCU",
+        "editable": true
+      }
+    },
+    "caja_notarial": {
+      "tasa_montepio": {
+        "valor": 0.19,
+        "descripcion": "Aporte Caja Notarial sobre honorario bruto",
+        "fuente": "Ley 17.738 / Resoluciones CNSS",
+        "editable": true
+      },
+      "aporte_minimo_anual_UR": {
+        "valor": 120,
+        "descripcion": "Aporte mínimo anual en UR (Art. 34 Ley 17.738)",
+        "editable": true
+      },
+      "timbre_notarial_UR": {
+        "valor": 1,
+        "descripcion": "Timbre notarial por documento (en UR)",
+        "editable": true
+      }
+    },
+    "tributos": {
+      "IVA": {
+        "tasa": 0.22,
+        "descripcion": "IVA sobre honorarios profesionales",
+        "fuente": "DGI / Decreto 220/998",
+        "editable": true,
+        "aplica_por_defecto": true
+      },
+      "IRPF_cat2": {
+        "descripcion": "IRPF Categoría II - Rendimientos de actividades económicas",
+        "fuente": "DGI",
+        "tramos": [
+          {
+            "desde_BPC": 0,
+            "hasta_BPC": 84,
+            "tasa": 0
+          },
+          {
+            "desde_BPC": 84,
+            "hasta_BPC": 120,
+            "tasa": 0.1
+          },
+          {
+            "desde_BPC": 120,
+            "hasta_BPC": 180,
+            "tasa": 0.2
+          },
+          {
+            "desde_BPC": 180,
+            "hasta_BPC": 516,
+            "tasa": 0.22
+          },
+          {
+            "desde_BPC": 516,
+            "hasta_BPC": 900,
+            "tasa": 0.25
+          },
+          {
+            "desde_BPC": 900,
+            "hasta_BPC": 1380,
+            "tasa": 0.27
+          },
+          {
+            "desde_BPC": 1380,
+            "hasta_BPC": null,
+            "tasa": 0.31
+          }
+        ]
+      },
+      "ITP": {
+        "tasa_comprador": 0.02,
+        "tasa_vendedor": 0.02,
+        "descripcion": "Impuesto a las Transmisiones Patrimoniales",
+        "fuente": "DGI",
+        "editable": true
+      },
+      "impuesto_primaria": {
+        "descripcion": "Impuesto de Enseñanza Primaria sobre valor real",
+        "tramos": [
+          {
+            "hasta": 282612,
+            "tasa": 0
+          },
+          {
+            "hasta": 494568,
+            "tasa": 0.0015
+          },
+          {
+            "hasta": 2119563,
+            "tasa": 0.002
+          },
+          {
+            "hasta": 4945638,
+            "tasa": 0.0025
+          },
+          {
+            "hasta": null,
+            "tasa": 0.003
+          }
+        ]
+      },
+      "irpf_escribano": {
+        "tasa_retencion": 0.07,
+        "deduccion_ficta": 0.3,
+        "descripcion": "IRPF Servicios Personales (estimación/retención)",
+        "editable": true
+      }
+    },
+    "frl": {
+      "tasa": 0.0025,
+      "descripcion": "Fondo de Reconversión Laboral (0,25%)",
+      "fuente": "Decreto 291/007",
+      "editable": true,
+      "aplica_a_inmuebles": true,
+      "aplica_a_sociedades": true
+    },
+    "fondo_gremial": {
+      "descripcion": "Escala de Fondo Gremial AEU - Primer Semestre 2026",
+      "fuente": "AEU",
+      "tramos": [
+        {
+          "desde_UR": 0,
+          "hasta_UR": 5,
+          "aporte_UR": 0
+        },
+        {
+          "desde_UR": 5.01,
+          "hasta_UR": 10,
+          "aporte_UR": 0.1
+        },
+        {
+          "desde_UR": 10.01,
+          "hasta_UR": 20,
+          "aporte_UR": 0.25
+        },
+        {
+          "desde_UR": 20.01,
+          "hasta_UR": 40,
+          "aporte_UR": 0.5
+        },
+        {
+          "desde_UR": 40.01,
+          "hasta_UR": 80,
+          "aporte_UR": 0.75
+        },
+        {
+          "desde_UR": 80.01,
+          "hasta_UR": 160,
+          "aporte_UR": 1.25
+        },
+        {
+          "desde_UR": 160.01,
+          "hasta_UR": null,
+          "aporte_UR": 2
+        }
+      ]
+    },
+    "fondo_solidaridad": {
+      "tasa": 0.015,
+      "descripcion": "Fondo de Solidaridad - egresados universitarios (referencia)",
+      "fuente": "https://egresados.fondodesolidaridad.edu.uy/",
+      "editable": true
+    }
+  },
+  "reducciones": {
+    "_info": "Reducciones Arancelarias - Arancel Notarial Uruguayo Actualizado a Oct 2025",
+    "_articulo": "Artículo 20",
+    "reducciones": [
+      {
+        "codigo": "RED_A",
+        "literal": "A",
+        "descripcion": "BHU – Vivienda de interés social permanente",
+        "reduccion": "Honorarios reducidos según tabla BHU",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_B",
+        "literal": "B",
+        "descripcion": "Inmuebles con VR inferior a 200 UR",
+        "reduccion": "Reducción de honorarios para inmuebles de bajo valor",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_C",
+        "literal": "C",
+        "descripcion": "Contratos accesorios al principal",
+        "reduccion": "50% del honorario cuando el contrato accesorio se otorga simultáneamente al principal",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_D",
+        "literal": "D",
+        "descripcion": "Refinanciaciones",
+        "reduccion": "Reducción sobre honorarios de hipotecas refinanciadas",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_E",
+        "literal": "E",
+        "descripcion": "Contrato definitivo posterior a promesa",
+        "reduccion": "Descuento del honorario de promesa ya pagado al liquidar el definitivo",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_F",
+        "literal": "F",
+        "descripcion": "Actas para previsión social",
+        "reduccion": "Honorario mínimo de 2 UR",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_G",
+        "literal": "G",
+        "descripcion": "MEVIR",
+        "reduccion": "Reducción especial para actuaciones de MEVIR",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_H",
+        "literal": "H",
+        "descripcion": "Leasing de transporte",
+        "reduccion": "Reducción arancelaria para contratos de leasing de vehículos de transporte",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_I_T1",
+        "literal": "I (Tipo I)",
+        "descripcion": "SIAV Tipo I (Reducción 50%)",
+        "reduccion": "Reducción del 50% de honorarios para Vivienda Tipo I del SIAV",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_I_T2",
+        "literal": "I (Tipo II)",
+        "descripcion": "SIAV Tipo II (Reducción 37%)",
+        "reduccion": "Reducción del 37% de honorarios para Vivienda Tipo II del SIAV",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_I_T3",
+        "literal": "I (Tipo III)",
+        "descripcion": "SIAV Tipo III (Reducción 25%)",
+        "reduccion": "Reducción del 25% de honorarios para Vivienda Tipo III del SIAV",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_J",
+        "literal": "J",
+        "descripcion": "Gravámenes hipotecarios en determinadas circunstancias",
+        "reduccion": "Reducción aplicable a hipotecas con condiciones especiales",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_K",
+        "literal": "K",
+        "descripcion": "Hipotecas MVOT",
+        "reduccion": "Reducción para hipotecas del Ministerio de Vivienda",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_L",
+        "literal": "L",
+        "descripcion": "Rescisión de arrendamiento rural",
+        "reduccion": "Honorario reducido para rescisiones de arrendamiento rural",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_M",
+        "literal": "M",
+        "descripcion": "Carta de pago por importe menor a 350 UR",
+        "reduccion": "Honorario mínimo reducido para cartas de pago pequeñas",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_N",
+        "literal": "N",
+        "descripcion": "Motocicletas y vehículos similares",
+        "reduccion": "Tarifa reducida para motos",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_Ñ",
+        "literal": "Ñ",
+        "descripcion": "Vehículos automotores",
+        "reduccion": "Honorario especial para transmisiones de vehículos",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_O",
+        "literal": "O",
+        "descripcion": "Compra por automotoras",
+        "reduccion": "Reducción para empresas que compran vehículos al por mayor",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_P",
+        "literal": "P",
+        "descripcion": "PIAI – Programa de Integración de Asentamientos Irregulares",
+        "reduccion": "Reducción para regularización de asentamientos",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_Q",
+        "literal": "Q",
+        "descripcion": "BHU/ANV al 0,9% – Vigente hasta 1° agosto 2027",
+        "reduccion": "Honorario del 0,9% para operaciones BHU/ANV específicas. Vigente hasta el 1° de agosto de 2027.",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_R",
+        "literal": "R",
+        "descripcion": "Gobiernos Departamentales",
+        "reduccion": "Reducción para actuaciones donde intervienen Intendencias",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_S",
+        "literal": "S",
+        "descripcion": "Cooperativas sociales",
+        "reduccion": "Reducción arancelaria para cooperativas sociales",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_T",
+        "literal": "T",
+        "descripcion": "MVOT – Ministerio de Vivienda",
+        "reduccion": "Reducción para actuaciones de planes MVOT",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_U",
+        "literal": "U",
+        "descripcion": "Fideicomisos de garantía y administración",
+        "reduccion": "Escala especial para fideicomisos",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_V",
+        "literal": "V",
+        "descripcion": "CGN/MVOT – Arrendamientos",
+        "reduccion": "Reducción para arrendamientos mediados por el Estado",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_W",
+        "literal": "W",
+        "descripcion": "PMB – Plan Mi Barrio",
+        "reduccion": "Reducción para actuaciones del Plan Mi Barrio",
+        "activa_por_defecto": false
+      }
+    ]
+  },
+  "actuaciones": {
+    "_info": "Catálogo de Actuaciones Notariales - Uruguay 2026",
+    "_version": "2026.06",
+    "_fuente": "Arancel Notarial Oficial AEU (actualizado oct 2025)",
+    "grupos": [
+      {
+        "id": "inmuebles",
+        "nombre": "Inmuebles y Derechos Reales",
+        "icono": "🏠"
+      },
+      {
+        "id": "automotores",
+        "nombre": "Vehículos Automotores",
+        "icono": "🚗"
+      },
+      {
+        "id": "propiedad_horizontal",
+        "nombre": "Propiedad Horizontal",
+        "icono": "🏢"
+      },
+      {
+        "id": "sucesorio",
+        "nombre": "Sucesorio",
+        "icono": "⚖️"
+      },
+      {
+        "id": "societario",
+        "nombre": "Societario",
+        "icono": "🏛️"
+      },
+      {
+        "id": "poderes",
+        "nombre": "Poderes",
+        "icono": "📋"
+      },
+      {
+        "id": "certificaciones",
+        "nombre": "Certificaciones",
+        "icono": "✅"
+      },
+      {
+        "id": "actas",
+        "nombre": "Actas y Protocolizaciones",
+        "icono": "📄"
+      },
+      {
+        "id": "otros",
+        "nombre": "Otros / Trámites",
+        "icono": "📁"
+      },
+      {
+        "id": "contratos",
+        "nombre": "Contratos y Actos Varios (Art. 2°)",
+        "icono": "📝"
+      }
+    ],
+    "actuaciones": [
+      {
+        "codigo": "CV01",
+        "nombre": "Compraventa de Inmueble",
+        "articulo": "Art. 1.I.A",
+        "grupo": "inmuebles",
+        "descripcion": "Escritura traslativa de dominio por compraventa. La base es el mayor entre precio, valor real y valor catastral actualizado.",
+        "variables": [
+          {
+            "id": "precio",
+            "label": "Precio de venta ($)",
+            "tipo": "monto",
+            "obligatorio": true
+          },
+          {
+            "id": "valor_real",
+            "label": "Valor real actualizado ($)",
+            "tipo": "monto",
+            "obligatorio": true
+          },
+          {
+            "id": "doble_escrit",
+            "label": "¿Doble escritura?",
+            "tipo": "boolean",
+            "obligatorio": false
+          },
+          {
+            "id": "promesa_previa",
+            "label": "¿Descuenta promesa previa (Art. 20.E)?",
+            "tipo": "boolean",
+            "obligatorio": false
+          },
+          {
+            "id": "_sec_irpf",
+            "tipo": "seccion",
+            "label": "📊 IRPF por Incrementos Patrimoniales (Vendedor)"
+          },
+          {
+            "id": "adq_antes_2007",
+            "label": "¿Inmueble adquirido ANTES del 01/07/2007?",
+            "tipo": "boolean",
+            "obligatorio": false
+          },
+          {
+            "id": "criterio_real",
+            "label": "Criterio Real",
+            "tipo": "boolean",
+            "obligatorio": false,
+            "dependsOn": "adq_antes_2007"
+          },
+          {
+            "id": "costo_adq_ui",
+            "label": "Costo adquisición actualiz. (en UI)",
+            "tipo": "numero",
+            "obligatorio": false,
+            "dependsOnReal": true
+          },
+          {
+            "id": "mejoras_ui",
+            "label": "Mejoras documentadas actualiz. (en UI)",
+            "tipo": "numero",
+            "obligatorio": false,
+            "dependsOnReal": true
+          },
+          {
+            "id": "porcentaje_bhu",
+            "label": "Porcentaje BHU a cobrar (75-100%)",
+            "tipo": "numero",
+            "obligatorio": false,
+            "dependsOn": "reduccion_arancelaria_RED_A"
+          },
+          {
+            "id": "tipo_acto_mvot",
+            "label": "Tipo de acto MVOT",
+            "tipo": "select",
+            "opciones": [
+              "compraventa",
+              "hipoteca"
+            ],
+            "obligatorio": false,
+            "dependsOn": "reduccion_arancelaria_RED_T"
+          },
+          {
+            "id": "tipo_acto_depto",
+            "label": "Tipo de acto Gob. Departamental",
+            "tipo": "select",
+            "opciones": [
+              "adquisicion",
+              "hipoteca_saldo",
+              "uso_habitacion"
+            ],
+            "obligatorio": false,
+            "dependsOn": "reduccion_arancelaria_RED_R"
+          },
+          {
+            "id": "tipo_piai",
+            "label": "Tipo de acto PIAI",
+            "tipo": "select",
+            "opciones": [
+              "enajenacion",
+              "uso_habitacion"
+            ],
+            "obligatorio": false,
+            "dependsOn": "reduccion_arancelaria_RED_P"
+          }
+        ],
+        "motor": "porcentaje_base_max",
+        "formula": {
+          "tasa": 0.03,
+          "minimo_UR": 12
+        },
+        "tributos": {
+          "IVA": true,
+          "ITP": true,
+          "Primaria": true,
+          "FRL": false,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "reducciones_aplicables": [
+          "RED_B",
+          "RED_C",
+          "RED_E",
+          "RED_I_T1",
+          "RED_I_T2",
+          "RED_I_T3",
+          "RED_P",
+          "RED_Q",
+          "RED_R",
+          "RED_T",
+          "RED_W",
+          "RED_A",
+          "RED_G",
+          "RED_H"
+        ],
+        "notas": "Si hay doble escritura, el honorario se aplica dos veces. El ITP es 2% comprador + 2% vendedor sobre el mayor valor. El Impuesto de Primaria es informativo: no se paga al escribano sino al Fisco."
+      },
+      {
+        "codigo": "DON01",
+        "nombre": "Donación de Inmueble",
+        "articulo": "Art. 1.I.A",
+        "grupo": "inmuebles",
+        "descripcion": "Transferencia gratuita de bien inmueble.",
+        "variables": [
+          {
+            "id": "valor_real",
+            "label": "Valor real del inmueble ($)",
+            "tipo": "monto",
+            "obligatorio": true
+          },
+          {
+            "id": "porcentaje_bhu",
+            "label": "Porcentaje BHU a cobrar (75-100%)",
+            "tipo": "numero",
+            "obligatorio": false
+          },
+          {
+            "id": "tipo_piai",
+            "label": "Tipo de acto PIAI",
+            "tipo": "select",
+            "opciones": [
+              "enajenacion",
+              "uso_habitacion"
+            ],
+            "obligatorio": false,
+            "dependsOn": "reduccion_arancelaria_RED_P"
+          },
+          {
+            "id": "tipo_acto_mvot",
+            "label": "Tipo de acto MVOT",
+            "tipo": "select",
+            "opciones": [
+              "compraventa",
+              "hipoteca"
+            ],
+            "obligatorio": false,
+            "dependsOn": "reduccion_arancelaria_RED_T"
+          },
+          {
+            "id": "tipo_acto_depto",
+            "label": "Tipo de acto Gob. Departamental",
+            "tipo": "select",
+            "opciones": [
+              "adquisicion",
+              "hipoteca_saldo",
+              "uso_habitacion"
+            ],
+            "obligatorio": false,
+            "dependsOn": "reduccion_arancelaria_RED_R"
+          }
+        ],
+        "motor": "porcentaje_simple",
+        "formula": {
+          "base": "valor_real",
+          "tasa": 0.03,
+          "minimo_UR": 12
+        },
+        "reducciones_aplicables": [
+          "RED_B",
+          "RED_C",
+          "RED_I_T1",
+          "RED_I_T2",
+          "RED_I_T3",
+          "RED_P",
+          "RED_R",
+          "RED_T",
+          "RED_W",
+          "RED_A",
+          "RED_G"
+        ],
+        "tributos": {
+          "IVA": true,
+          "ITP": true,
+          "Primaria": true,
+          "FRL": false,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "En donaciones, solo aplica ITP si el donatario no es cónyuge o descendiente."
+      },
+      {
+        "codigo": "PER01",
+        "nombre": "Permuta de Inmuebles",
+        "articulo": "Art. 1.I.A",
+        "grupo": "inmuebles",
+        "descripcion": "Intercambio de inmuebles. El honorario se calcula sobre el mayor de los valores permutados.",
+        "variables": [
+          {
+            "id": "valor_inmueble_a",
+            "label": "Valor inmueble A ($)",
+            "tipo": "monto",
+            "obligatorio": true
+          },
+          {
+            "id": "valor_inmueble_b",
+            "label": "Valor inmueble B ($)",
+            "tipo": "monto",
+            "obligatorio": true
+          },
+          {
+            "id": "tipo_acto_mvot",
+            "label": "Tipo de acto MVOT",
+            "tipo": "select",
+            "opciones": [
+              "compraventa",
+              "hipoteca"
+            ],
+            "obligatorio": false,
+            "dependsOn": "reduccion_arancelaria_RED_T"
+          },
+          {
+            "id": "tipo_acto_depto",
+            "label": "Tipo de acto Gob. Departamental",
+            "tipo": "select",
+            "opciones": [
+              "adquisicion",
+              "hipoteca_saldo",
+              "uso_habitacion"
+            ],
+            "obligatorio": false,
+            "dependsOn": "reduccion_arancelaria_RED_R"
+          }
+        ],
+        "motor": "porcentaje_base_max",
+        "formula": {
+          "tasa": 0.03,
+          "minimo_UR": 12
+        },
+        "tributos": {
+          "IVA": true,
+          "ITP": true,
+          "FRL": false,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "reducciones_aplicables": [
+          "RED_B",
+          "RED_C",
+          "RED_I_T1",
+          "RED_I_T2",
+          "RED_I_T3",
+          "RED_R",
+          "RED_T",
+          "RED_W"
+        ],
+        "notas": "En permuta se consideran dos transmisiones. ITP aplica a cada parte."
+      },
+      {
+        "codigo": "PH01",
+        "nombre": "Promesa de Compraventa",
+        "articulo": "Art. 1",
+        "grupo": "inmuebles",
+        "descripcion": "Contrato preliminar de compraventa. Al otorgarse el definitivo, se descuenta el honorario ya pagado.",
+        "variables": [
+          {
+            "id": "precio",
+            "label": "Precio prometido ($)",
+            "tipo": "monto",
+            "obligatorio": true
+          },
+          {
+            "id": "valor_real",
+            "label": "Valor real actualizado ($)",
+            "tipo": "monto",
+            "obligatorio": false
+          },
+          {
+            "id": "promesa_previa",
+            "label": "¿Descuenta promesa previa?",
+            "tipo": "boolean",
+            "obligatorio": false
+          },
+          {
+            "id": "porcentaje_bhu",
+            "label": "Porcentaje BHU a cobrar (75-100%)",
+            "tipo": "numero",
+            "obligatorio": false
+          },
+          {
+            "id": "tipo_acto_mvot",
+            "label": "Tipo de acto MVOT",
+            "tipo": "select",
+            "opciones": [
+              "compraventa",
+              "hipoteca"
+            ],
+            "obligatorio": false,
+            "dependsOn": "reduccion_arancelaria_RED_T"
+          },
+          {
+            "id": "tipo_acto_depto",
+            "label": "Tipo de acto Gob. Departamental",
+            "tipo": "select",
+            "opciones": [
+              "adquisicion",
+              "hipoteca_saldo",
+              "uso_habitacion"
+            ],
+            "obligatorio": false,
+            "dependsOn": "reduccion_arancelaria_RED_R"
+          }
+        ],
+        "motor": "porcentaje_base_max",
+        "formula": {
+          "tasa": 0.03,
+          "minimo_UR": 12
+        },
+        "tributos": {
+          "IVA": true,
+          "FRL": false,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "reducciones_aplicables": [
+          "RED_B",
+          "RED_C",
+          "RED_E",
+          "RED_I_T1",
+          "RED_I_T2",
+          "RED_I_T3",
+          "RED_Q",
+          "RED_R",
+          "RED_T",
+          "RED_W",
+          "RED_A"
+        ],
+        "notas": "Si luego se otorga escritura definitiva, se aplica la reducción Art. 20.E (descuento del honorario ya abonado)."
+      },
+      {
+        "codigo": "CPH01",
+        "nombre": "Cesión de Promesa de Compraventa",
+        "articulo": "Art. 1",
+        "grupo": "inmuebles",
+        "descripcion": "Cesión de posición contractual en promesa de compraventa.",
+        "variables": [
+          {
+            "id": "precio_cesion",
+            "label": "Precio de cesión ($)",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "porcentaje_simple",
+        "formula": {
+          "base": "precio_cesion",
+          "tasa": 0.03,
+          "minimo_UR": 12
+        },
+        "tributos": {
+          "IVA": true,
+          "FRL": false,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "reducciones_aplicables": [
+          "RED_C"
+        ],
+        "notas": ""
+      },
+      {
+        "codigo": "HIP01",
+        "nombre": "Constitución de Hipoteca",
+        "articulo": "Art. 1",
+        "grupo": "inmuebles",
+        "descripcion": "Garantía hipotecaria sobre inmueble. El honorario se calcula sobre el capital garantizado.",
+        "variables": [
+          {
+            "id": "capital_garantizado",
+            "label": "Capital garantizado ($)",
+            "tipo": "monto",
+            "obligatorio": true
+          },
+          {
+            "id": "plazo_meses",
+            "label": "Plazo (meses)",
+            "tipo": "numero",
+            "obligatorio": false
+          },
+          {
+            "id": "tipo_hipoteca",
+            "label": "Tipo de hipoteca",
+            "tipo": "select",
+            "opciones": [
+              "normal",
+              "refinanciacion",
+              "leasing_brou",
+              "con_escribano_institucion"
+            ],
+            "obligatorio": false
+          },
+          {
+            "id": "porcentaje_refinanciacion",
+            "label": "Porcentaje a cobrar en refinanciación (50-100%)",
+            "tipo": "numero",
+            "obligatorio": false,
+            "dependsOn": "reduccion_arancelaria_RED_D"
+          },
+          {
+            "id": "honorario_escribano_institucion",
+            "label": "Honorario del escribano de la institución financiera ($)",
+            "tipo": "monto",
+            "obligatorio": false,
+            "dependsOn": "reduccion_arancelaria_RED_J"
+          }
+        ],
+        "motor": "porcentaje_simple",
+        "formula": {
+          "base": "capital_garantizado",
+          "tasa": 0.03,
+          "minimo_UR": 12
+        },
+        "tributos": {
+          "IVA": true,
+          "FRL": false,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "reducciones_aplicables": [
+          "RED_C",
+          "RED_D",
+          "RED_J",
+          "RED_K",
+          "RED_Q",
+          "RED_H"
+        ],
+        "notas": "Tasa del 3% sobre capital garantizado (Art. 1°.I.B). Para hipotecas MVOT aplica Art. 20.K (RED_K). Para hipotecas BHU/ANV puede aplicar Art. 20.Q (RED_Q, 0,9%, vigente hasta agosto 2027)."
+      },
+      {
+        "codigo": "CAN01",
+        "nombre": "Cancelación de Hipoteca",
+        "articulo": "Art. 1",
+        "grupo": "inmuebles",
+        "descripcion": "Cancelación/levantamiento de garantía hipotecaria.",
+        "variables": [
+          {
+            "id": "capital_cancelado",
+            "label": "Capital cancelado ($)",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "porcentaje_simple",
+        "formula": {
+          "base": "capital_cancelado",
+          "tasa": 0.005,
+          "minimo_UR": 6
+        },
+        "reducciones_aplicables": [
+          "RED_M"
+        ],
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Cancelación: 0,5% del capital. Mínimo 6 UR."
+      },
+      {
+        "codigo": "FID01",
+        "nombre": "Fideicomiso",
+        "articulo": "Art. 1 / Art. 20.U",
+        "grupo": "inmuebles",
+        "descripcion": "Constitución de fideicomiso (garantía, administración, etc.).",
+        "variables": [
+          {
+            "id": "valor_patrimonio_fideicomitido",
+            "label": "Valor del patrimonio fideicomitido ($)",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "porcentaje_simple",
+        "formula": {
+          "base": "valor_patrimonio_fideicomitido",
+          "tasa": 0.03,
+          "minimo_UR": 40
+        },
+        "tributos": {
+          "IVA": true,
+          "FRL": false,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "reducciones_aplicables": [
+          "RED_U"
+        ],
+        "notas": "Mínimo 40 UR. RED_U aplica cuando el escribano solo certifica firmas: 1‰ del monto, máximo 1.500 UR, mínimo 12 UR (Art. 20.U)."
+      },
+      {
+        "codigo": "RC01",
+        "nombre": "Reglamento de Copropiedad",
+        "articulo": "Art. 4",
+        "grupo": "propiedad_horizontal",
+        "descripcion": "Afectación de edificio al régimen de Propiedad Horizontal y aprobación del reglamento de copropiedad.",
+        "variables": [
+          {
+            "id": "cantidad_unidades",
+            "label": "Cantidad de unidades",
+            "tipo": "numero",
+            "obligatorio": true
+          },
+          {
+            "id": "vra_total",
+            "label": "Suma VRA de todas las unidades ($)",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "reglamento_copropiedad",
+        "formula": {
+          "honorario_ur_por_unidad": 10,
+          "tope_ur": 60,
+          "adicional_porcentaje_vra": 0.01,
+          "minimo_UR": 10
+        },
+        "reducciones_aplicables": [],
+        "tributos": {
+          "IVA": true,
+          "FRL": false,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Honorario = MIN(unidades × 10 UR; 60 UR) + 1% del VRA total. Para unidades con VR < 50 UR existen reducciones especiales."
+      },
+      {
+        "codigo": "MRC01",
+        "nombre": "Modificación de Reglamento de Copropiedad",
+        "articulo": "Art. 4",
+        "grupo": "propiedad_horizontal",
+        "descripcion": "Modificación o incorporación de nuevas unidades al reglamento existente.",
+        "variables": [
+          {
+            "id": "tipo_modificacion",
+            "label": "Tipo de modificación",
+            "tipo": "select",
+            "opciones": [
+              "incorporacion",
+              "division",
+              "fusion",
+              "otro"
+            ],
+            "obligatorio": true
+          },
+          {
+            "id": "vr_nuevas_unidades",
+            "label": "VR nuevas unidades ($)",
+            "tipo": "monto",
+            "obligatorio": true
+          },
+          {
+            "id": "cant_unid_divididas",
+            "label": "Cant. unidades divididas",
+            "tipo": "numero",
+            "obligatorio": false
+          },
+          {
+            "id": "cant_nuevas_unid",
+            "label": "Cant. nuevas unidades",
+            "tipo": "numero",
+            "obligatorio": false
+          }
+        ],
+        "motor": "modificacion_reglamento",
+        "formula": {
+          "incorporacion_tasa_vr": 0.01,
+          "division_tasa_vr_nueva": 0.01,
+          "division_UR_por_unid_dividida": 2,
+          "division_UR_por_nueva_unid": 2,
+          "minimo_UR": 20
+        },
+        "reducciones_aplicables": [],
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Incorporación: 1% VR. División: 1% VR nueva + 2 UR por dividida + 2 UR por nueva. Mín. 20 UR."
+      },
+      {
+        "codigo": "SUC01",
+        "nombre": "Trámite Sucesorio",
+        "articulo": "Art. 14",
+        "grupo": "sucesorio",
+        "descripcion": "Trámite de declaratoria de herederos y apertura de la sucesión.",
+        "variables": [
+          {
+            "id": "acervo_bruto",
+            "label": "Acervo hereditario bruto ($)",
+            "tipo": "monto",
+            "obligatorio": true
+          },
+          {
+            "id": "cant_herederos",
+            "label": "Cantidad de herederos",
+            "tipo": "numero",
+            "obligatorio": false
+          },
+          {
+            "id": "valor_real_inmuebles",
+            "label": "Valor real catastral total de inmuebles ($) — base ITP",
+            "tipo": "monto",
+            "obligatorio": false
+          },
+          {
+            "id": "porcentaje_linea_recta",
+            "label": "% del valor de inmuebles que reciben herederos en línea recta (0–100)",
+            "tipo": "numero",
+            "obligatorio": false
+          }
+        ],
+        "motor": "escala_art1",
+        "formula": {
+          "base": "acervo_bruto",
+          "tasa": 0.03,
+          "minimo_UR": 12
+        },
+        "tributos": {
+          "IVA": true,
+          "ITP": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Mínimo 12 UR. El ITP (Trasmisión Causa de Muerte) se calcula sobre el valor real catastral de inmuebles: cada heredero paga el 3% si es de línea recta (ascendientes, descendientes, cónyuge) o el 4% si no lo es — NO se mezclan las tasas."
+      },
+      {
+        "codigo": "PART01",
+        "nombre": "Partición de Herencia",
+        "articulo": "Art. 14",
+        "grupo": "sucesorio",
+        "descripcion": "División del patrimonio hereditario entre los herederos.",
+        "variables": [
+          {
+            "id": "valor_masa_partible",
+            "label": "Valor masa partible ($)",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "escala_art1",
+        "formula": {
+          "base": "valor_masa_partible",
+          "tasa": 0.03,
+          "minimo_UR": 12
+        },
+        "reducciones_aplicables": [],
+        "tributos": {
+          "IVA": true,
+          "ITP": false,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "En la partición de herencia no hay ITP entre coherederos."
+      },
+      {
+        "codigo": "CDH01",
+        "nombre": "Cesión de Derechos Hereditarios",
+        "articulo": "Art. 1",
+        "grupo": "sucesorio",
+        "descripcion": "Cesión de los derechos sobre la herencia a un tercero.",
+        "variables": [
+          {
+            "id": "valor_cesion",
+            "label": "Valor de la cesión ($)",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "porcentaje_simple",
+        "formula": {
+          "base": "valor_cesion",
+          "tasa": 0.03,
+          "minimo_UR": 12
+        },
+        "tributos": {
+          "IVA": true,
+          "ITP": true,
+          "FRL": false,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "reducciones_aplicables": [],
+        "notas": "Honorario de cesión: 3% sobre el valor de la cesión. El ITP en cesión de derechos hereditarios es del 4% en total (2% para el cedente/enajenante y 2% para el cesionario/adquirente), asimilado a una compraventa común, sin importar el parentesco."
+      },
+      {
+        "codigo": "TEST01",
+        "nombre": "Testamento",
+        "articulo": "Art. 3°",
+        "grupo": "sucesorio",
+        "descripcion": "Otorgamiento de testamento ante escribano.",
+        "variables": [
+          {
+            "id": "honorario_elegido",
+            "label": "Honorario a cobrar ($) — entre mín y máx",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "rango_libre",
+        "formula": {
+          "minimo_UR": 12,
+          "maximo_UR": 80
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "reducciones_aplicables": [],
+        "notas": "Honorario entre 12 y 80 UR según complejidad del testamento."
+      },
+      {
+        "codigo": "SRL01",
+        "nombre": "Constitución de SRL",
+        "articulo": "Art. 7",
+        "grupo": "societario",
+        "descripcion": "Constitución de Sociedad de Responsabilidad Limitada.",
+        "variables": [
+          {
+            "id": "capital_social",
+            "label": "Capital social ($)",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "constitucion_sociedad_srl",
+        "formula": {
+          "umbral_UR": 2854,
+          "tasa_baja": 0.03,
+          "minimo_UR_baja": 12,
+          "tasa_alta": 0.005,
+          "minimo_UR_alta": 40
+        },
+        "tributos": {
+          "IVA": true,
+          "FRL": false,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Capital < 2854 UR: 3% mín 12 UR. Capital >= 2854 UR: 5‰ mín 40 UR.",
+        "reducciones_aplicables": []
+      },
+      {
+        "codigo": "SAS01",
+        "nombre": "Constitución de SAS",
+        "articulo": "Art. 7",
+        "grupo": "societario",
+        "descripcion": "Constitución de Sociedad por Acciones Simplificada.",
+        "variables": [
+          {
+            "id": "capital_social",
+            "label": "Capital social ($)",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "constitucion_sociedad_srl",
+        "formula": {
+          "umbral_UR": 2854,
+          "tasa_baja": 0.03,
+          "minimo_UR_baja": 12,
+          "tasa_alta": 0.005,
+          "minimo_UR_alta": 40
+        },
+        "tributos": {
+          "IVA": true,
+          "FRL": false,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Mismas reglas que SRL. Capital < 2854 UR: 3% mín 12 UR. Capital >= 2854 UR: 5‰ mín 40 UR.",
+        "reducciones_aplicables": []
+      },
+      {
+        "codigo": "SA01",
+        "nombre": "Constitución de SA",
+        "articulo": "Art. 7",
+        "grupo": "societario",
+        "descripcion": "Constitución de Sociedad Anónima.",
+        "variables": [
+          {
+            "id": "capital_social",
+            "label": "Capital social ($)",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "constitucion_sa",
+        "formula": {
+          "tasa": 0.005,
+          "minimo_UR": 40
+        },
+        "tributos": {
+          "IVA": true,
+          "FRL": false,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "5‰ del capital social, mínimo 40 UR."
+      },
+      {
+        "codigo": "CESCU01",
+        "nombre": "Cesión de Cuotas Societarias",
+        "articulo": "Art. 7",
+        "grupo": "societario",
+        "descripcion": "Transmisión de cuotas sociales en SRL o SAS.",
+        "variables": [
+          {
+            "id": "valor_cesion",
+            "label": "Valor de la cesión ($)",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "porcentaje_simple",
+        "formula": {
+          "base": "valor_cesion",
+          "tasa": 0.03,
+          "minimo_UR": 12
+        },
+        "tributos": {
+          "IVA": true,
+          "FRL": false,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Aplica 3% sobre el valor de la cesión."
+      },
+      {
+        "codigo": "AUM01",
+        "nombre": "Aumento de Capital Societario",
+        "articulo": "Art. 7",
+        "grupo": "societario",
+        "descripcion": "Ampliación de capital social de cualquier tipo societario.",
+        "variables": [
+          {
+            "id": "monto_aumento",
+            "label": "Monto del aumento ($)",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "constitucion_sociedad_srl",
+        "formula": {
+          "umbral_UR": 2854,
+          "tasa_baja": 0.03,
+          "minimo_UR_baja": 12,
+          "tasa_alta": 0.005,
+          "minimo_UR_alta": 40
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Se aplica la misma escala que para la constitución, sobre el monto del aumento."
+      },
+      {
+        "codigo": "POD01",
+        "nombre": "Poder General",
+        "articulo": "Art. 2",
+        "grupo": "poderes",
+        "descripcion": "Poder notarial general a favor de uno o más mandatarios.",
+        "variables": [
+          {
+            "id": "incluye_judicial",
+            "label": "¿Incluye poderes judiciales?",
+            "tipo": "boolean",
+            "obligatorio": false
+          },
+          {
+            "id": "distinto_mandatario",
+            "label": "¿Mandatario judicial distinto?",
+            "tipo": "boolean",
+            "obligatorio": false
+          }
+        ],
+        "motor": "poder",
+        "formula": {
+          "base_UR": 12,
+          "judicial_mismo_mandatario_UR": 12,
+          "judicial_distinto_mandatario_UR": 24
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Poder general: 12 UR. Con judicial mismo mandatario: 12 UR. Judicial a distinto mandatario: 24 UR total."
+      },
+      {
+        "codigo": "POD02",
+        "nombre": "Poder Especial",
+        "articulo": "Art. 2",
+        "grupo": "poderes",
+        "descripcion": "Poder notarial limitado a actos específicos.",
+        "variables": [],
+        "motor": "fijo_UR",
+        "formula": {
+          "honorario_UR": 8,
+          "minimo_UR": 8
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Honorario de 8 UR para poder especial."
+      },
+      {
+        "codigo": "REV01",
+        "nombre": "Revocación de Poder",
+        "articulo": "Art. 2",
+        "grupo": "poderes",
+        "descripcion": "Revocación de mandato notarial.",
+        "variables": [],
+        "motor": "fijo_UR",
+        "formula": {
+          "honorario_UR": 6,
+          "minimo_UR": 6
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Honorario de 6 UR por revocación."
+      },
+      {
+        "codigo": "CF01",
+        "nombre": "Certificación de Firmas",
+        "articulo": "Art. 8",
+        "grupo": "certificaciones",
+        "descripcion": "Certificación notarial de firma(s) en documentos.",
+        "variables": [
+          {
+            "id": "cantidad_firmas",
+            "label": "Cantidad de firmas/sellos a certificar",
+            "tipo": "numero",
+            "obligatorio": true
+          }
+        ],
+        "motor": "certificacion_firmas",
+        "formula": {
+          "ur_por_firma": 2,
+          "minimo_UR": 2
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "2 UR por firma o sello certificado, mín. 2 UR (Art. 6, lit. D y E AEU). Rango orientativo: 2–15 UR a criterio del escribano. Formularios para Registro Civil: 1 UR fijo (usar CFREC01). Incluye: documentos privados, contratos, solicitudes, cartas poder simples."
+      },
+      {
+        "codigo": "CF02",
+        "nombre": "Certificación de Fotocopias",
+        "articulo": "Art. 8",
+        "grupo": "certificaciones",
+        "descripcion": "Certificación notarial de copias de documentos.",
+        "variables": [
+          {
+            "id": "cantidad_fojas",
+            "label": "Cantidad de fojas",
+            "tipo": "numero",
+            "obligatorio": true
+          }
+        ],
+        "motor": "certificacion_fotocopias",
+        "formula": {
+          "ur_por_foja": 0.5,
+          "minimo_UR": 1
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "0,5 UR por foja certificada. Mínimo 1 UR."
+      },
+      {
+        "codigo": "CFREC01",
+        "nombre": "Certificación para Registro Civil",
+        "articulo": "Art. 8",
+        "grupo": "certificaciones",
+        "descripcion": "Formularios exclusivos para Registro de Estado Civil.",
+        "variables": [],
+        "motor": "fijo_UR",
+        "formula": {
+          "honorario_UR": 1,
+          "minimo_UR": 1
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": false
+        },
+        "notas": "Regla específica AEU 2025: 1 UR para formularios Registro Civil."
+      },
+      {
+        "codigo": "PRO01",
+        "nombre": "Protocolización",
+        "articulo": "Art. 10",
+        "grupo": "actas",
+        "descripcion": "Protocolización de documentos privados o públicos.",
+        "variables": [
+          {
+            "id": "cantidad_fojas",
+            "label": "Cantidad de fojas del documento",
+            "tipo": "numero",
+            "obligatorio": true
+          }
+        ],
+        "motor": "protocolizacion",
+        "formula": {
+          "base_UR": 6,
+          "fojas_incluidas": 10,
+          "ur_por_foja_excedente": 0.1
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "6 UR hasta 10 fojas. Por cada foja excedente: +0,10 UR."
+      },
+      {
+        "codigo": "ACT01",
+        "nombre": "Acta Notarial",
+        "articulo": "Art. 11",
+        "grupo": "actas",
+        "descripcion": "Acta de constatación, presencia, notoriedad o notificación. El honorario queda a criterio del escribano entre el mínimo y máximo arancelario.",
+        "variables": [
+          {
+            "id": "honorario_elegido",
+            "label": "Honorario a cobrar ($) — entre mín y máx",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "rango_libre",
+        "formula": {
+          "minimo_UR": 6,
+          "maximo_UR": 200
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Mínimo 6 UR, máximo 200 UR. A criterio del escribano según complejidad.",
+        "reducciones_aplicables": [
+          "RED_F"
+        ]
+      },
+      {
+        "codigo": "ASE01",
+        "nombre": "Asesoramiento Notarial",
+        "articulo": "Art. 13.A",
+        "grupo": "otros",
+        "descripcion": "Asesoramiento profesional notarial sobre negocios jurídicos.",
+        "variables": [
+          {
+            "id": "valor_base",
+            "label": "Valor del negocio asesorado ($)",
+            "tipo": "monto",
+            "obligatorio": false
+          },
+          {
+            "id": "horas",
+            "label": "Horas de trabajo (alternativo)",
+            "tipo": "numero",
+            "obligatorio": false
+          }
+        ],
+        "motor": "asesoramiento",
+        "formula": {
+          "tasa": 0.01,
+          "minimo_UR": 8,
+          "maximo_UR": null
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "1% del valor del negocio, mínimo 8 UR."
+      },
+      {
+        "codigo": "DES01",
+        "nombre": "Descarte Registral",
+        "articulo": "Art. 13.B",
+        "grupo": "otros",
+        "descripcion": "Búsqueda y descarte de antecedentes registrales.",
+        "variables": [
+          {
+            "id": "honorario_elegido",
+            "label": "Honorario a cobrar ($) — entre mín y máx",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "rango_libre",
+        "formula": {
+          "minimo_UR": 3,
+          "maximo_UR": 40
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Entre 3 y 40 UR según complejidad. A criterio del escribano."
+      },
+      {
+        "codigo": "TRA01",
+        "nombre": "Trámites y Gestiones",
+        "articulo": "Art. 16",
+        "grupo": "otros",
+        "descripcion": "Diligencias, gestiones y trámites notariales ante organismos.",
+        "variables": [
+          {
+            "id": "honorario_elegido",
+            "label": "Honorario a cobrar ($)",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "rango_libre",
+        "formula": {
+          "minimo_UR": 8,
+          "maximo_UR": 40
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Entre 8 y 40 UR. A criterio del escribano."
+      },
+      {
+        "codigo": "MED01",
+        "nombre": "Mediación Notarial",
+        "articulo": "Art. 12.C",
+        "grupo": "otros",
+        "descripcion": "Intervención del escribano como mediador.",
+        "variables": [
+          {
+            "id": "horas",
+            "label": "Cantidad de horas de mediación",
+            "tipo": "numero",
+            "obligatorio": true
+          },
+          {
+            "id": "ur_por_hora",
+            "label": "UR por hora (entre 2 y 8 UR)",
+            "tipo": "numero",
+            "obligatorio": true
+          }
+        ],
+        "motor": "mediacion",
+        "formula": {
+          "ur_hora_min": 2,
+          "ur_hora_max": 8,
+          "horas_minimas": 4,
+          "minimo_UR": 8
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Entre 2 y 8 UR por hora. Mínimo 4 horas."
+      },
+      {
+        "codigo": "LG01",
+        "nombre": "Liberación de Gravamen",
+        "articulo": "Art. 2°",
+        "grupo": "contratos",
+        "descripcion": "Escritura de liberación de gravamen hipotecario u otras cargas.",
+        "variables": [],
+        "motor": "fijo_UR",
+        "formula": {
+          "honorario_UR": 12,
+          "minimo_UR": 12
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Honorario fijo de 12 UR."
+      },
+      {
+        "codigo": "DIS01",
+        "nombre": "Distracto / Rescisión",
+        "articulo": "Art. 2°",
+        "grupo": "contratos",
+        "descripcion": "Rescisión o distracto de cualquier contrato notarial.",
+        "variables": [],
+        "motor": "fijo_UR",
+        "formula": {
+          "honorario_UR": 12,
+          "minimo_UR": 12
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Honorario fijo de 12 UR."
+      },
+      {
+        "codigo": "COM01",
+        "nombre": "Convención Matrimonial",
+        "articulo": "Art. 2°",
+        "grupo": "contratos",
+        "descripcion": "Contrato de capitulaciones matrimoniales o modificación de régimen patrimonial.",
+        "variables": [],
+        "motor": "fijo_UR",
+        "formula": {
+          "honorario_UR": 12,
+          "minimo_UR": 12
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Honorario fijo de 12 UR."
+      },
+      {
+        "codigo": "COD01",
+        "nombre": "Comodato",
+        "articulo": "Art. 2°",
+        "grupo": "contratos",
+        "descripcion": "Contrato de comodato (préstamo de uso).",
+        "variables": [],
+        "motor": "fijo_UR",
+        "formula": {
+          "honorario_UR": 12,
+          "minimo_UR": 12
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Honorario fijo de 12 UR."
+      },
+      {
+        "codigo": "DISSOC01",
+        "nombre": "Disolución de Sociedad Conyugal",
+        "articulo": "Art. 2°",
+        "grupo": "contratos",
+        "descripcion": "Escritura de disolución de la sociedad conyugal.",
+        "variables": [],
+        "motor": "fijo_UR",
+        "formula": {
+          "honorario_UR": 12,
+          "minimo_UR": 12
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Honorario fijo de 12 UR."
+      },
+      {
+        "codigo": "FIA01",
+        "nombre": "Fianza",
+        "articulo": "Art. 2°",
+        "grupo": "contratos",
+        "descripcion": "Contrato de fianza personal.",
+        "variables": [],
+        "motor": "fijo_UR",
+        "formula": {
+          "honorario_UR": 12,
+          "minimo_UR": 12
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Honorario fijo de 12 UR."
+      },
+      {
+        "codigo": "CPO01",
+        "nombre": "Carta Poder – Automotores",
+        "articulo": "Art. 2°.F",
+        "grupo": "automotores",
+        "descripcion": "Carta poder para gestión y transferencia de vehículos automotores.",
+        "variables": [],
+        "motor": "fijo_UR",
+        "formula": {
+          "honorario_UR": 4,
+          "minimo_UR": 4
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Honorario fijo de 4 UR para automotores. Verificar RED_Ñ para escala especial de transmisión."
+      },
+      {
+        "codigo": "CPM01",
+        "nombre": "Carta Poder – Motocicletas",
+        "articulo": "Art. 2°.F",
+        "grupo": "automotores",
+        "descripcion": "Carta poder para gestión y transferencia de motocicletas.",
+        "variables": [],
+        "motor": "fijo_UR",
+        "formula": {
+          "honorario_UR": 3,
+          "minimo_UR": 3
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Honorario fijo de 3 UR para motocicletas. Verificar RED_N para escala especial."
+      },
+      {
+        "codigo": "CERTVP01",
+        "nombre": "Certificación – Vale / Pagaré",
+        "articulo": "Art. 6°",
+        "grupo": "certificaciones",
+        "descripcion": "Certificación de firmas en vales o pagarés.",
+        "variables": [
+          {
+            "id": "honorario_elegido",
+            "label": "Honorario a cobrar ($) — entre mín y máx",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "rango_libre",
+        "formula": {
+          "minimo_UR": 3,
+          "maximo_UR": 15
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Entre 3 y 15 UR según el importe del documento."
+      },
+      {
+        "codigo": "CERTBPS01",
+        "nombre": "Carta Poder BPS",
+        "articulo": "Art. 6°",
+        "grupo": "certificaciones",
+        "descripcion": "Certificación de carta poder para trámites ante BPS.",
+        "variables": [
+          {
+            "id": "honorario_elegido",
+            "label": "Honorario a cobrar ($) — entre mín y máx",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "rango_libre",
+        "formula": {
+          "minimo_UR": 0.5,
+          "maximo_UR": 5
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Entre 0,5 y 5 UR."
+      },
+      {
+        "codigo": "CJ01",
+        "nombre": "Certificación de Situación Jurídica",
+        "articulo": "Art. 6°",
+        "grupo": "certificaciones",
+        "descripcion": "Certificación sobre situación jurídica de personas o bienes.",
+        "variables": [
+          {
+            "id": "honorario_elegido",
+            "label": "Honorario a cobrar ($) — entre mín y máx",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "rango_libre",
+        "formula": {
+          "minimo_UR": 2,
+          "maximo_UR": 15
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Entre 2 y 15 UR según complejidad."
+      },
+      {
+        "codigo": "COOP01",
+        "nombre": "Cooperativas / Asociaciones / Fundaciones",
+        "articulo": "Art. 7°",
+        "grupo": "societario",
+        "descripcion": "Constitución de cooperativa, asociación civil o fundación.",
+        "variables": [
+          {
+            "id": "honorario_elegido",
+            "label": "Honorario a cobrar ($) — entre mín y máx",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "rango_libre",
+        "formula": {
+          "minimo_UR": 20,
+          "maximo_UR": 50
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Entre 20 y 50 UR según complejidad y capital."
+      },
+      {
+        "codigo": "TESTEX01",
+        "nombre": "Testimonio por Exhibición",
+        "articulo": "Art. 8°",
+        "grupo": "certificaciones",
+        "descripcion": "Testimonio de documentos por exhibición ante escribano.",
+        "variables": [
+          {
+            "id": "cantidad_fojas",
+            "label": "Cantidad de fojas",
+            "tipo": "numero",
+            "obligatorio": true
+          }
+        ],
+        "motor": "protocolizacion",
+        "formula": {
+          "base_UR": 0.5,
+          "fojas_incluidas": 2,
+          "ur_por_foja_excedente": 0.1
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "0,5 UR base (primeras 2 fojas) + 0,10 UR por cada foja adicional."
+      },
+      {
+        "codigo": "COPIA01",
+        "nombre": "Segundas / Ulteriores Copias",
+        "articulo": "Art. 9°",
+        "grupo": "actas",
+        "descripcion": "Expedición de segundas o ulteriores copias de documentos protocolares.",
+        "variables": [
+          {
+            "id": "honorario_elegido",
+            "label": "Honorario a cobrar ($) — entre mín y máx",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "rango_libre",
+        "formula": {
+          "minimo_UR": 8,
+          "maximo_UR": 20
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Entre 8 y 20 UR."
+      },
+      {
+        "codigo": "ARB01",
+        "nombre": "Actuario Arbitral",
+        "articulo": "Art. 12°.A",
+        "grupo": "otros",
+        "descripcion": "Actuación como actuario en juicio arbitral.",
+        "variables": [
+          {
+            "id": "valor_base",
+            "label": "Valor del asunto arbitral ($)",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "porcentaje_simple",
+        "formula": {
+          "base": "valor_base",
+          "tasa": 0.02,
+          "minimo_UR": 20
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "2% del valor del asunto, mínimo 20 UR."
+      },
+      {
+        "codigo": "ARB02",
+        "nombre": "Árbitro",
+        "articulo": "Art. 12°.B",
+        "grupo": "otros",
+        "descripcion": "Actuación como árbitro en juicio arbitral.",
+        "variables": [
+          {
+            "id": "valor_base",
+            "label": "Valor del asunto arbitral ($)",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "porcentaje_simple",
+        "formula": {
+          "base": "valor_base",
+          "tasa": 0.02,
+          "minimo_UR": 20
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "2% del valor del asunto, mínimo 20 UR."
+      },
+      {
+        "codigo": "EXP01",
+        "nombre": "Expedientes Varios (Venias, etc.)",
+        "articulo": "Art. 15°.A",
+        "grupo": "otros",
+        "descripcion": "Tramitación de expedientes notariales (venias, habilitaciones, licencias, etc.).",
+        "variables": [
+          {
+            "id": "honorario_elegido",
+            "label": "Honorario a cobrar ($) — entre mín y máx",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "rango_libre",
+        "formula": {
+          "minimo_UR": 12,
+          "maximo_UR": 40
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Entre 12 y 40 UR. Incluye venias, habilitaciones y similares."
+      },
+      {
+        "codigo": "EXP02",
+        "nombre": "Estatutos AC / Cooperativas (Expediente)",
+        "articulo": "Art. 15°.B",
+        "grupo": "otros",
+        "descripcion": "Expediente para estatutos de asociación civil, cooperativa u organización similar.",
+        "variables": [
+          {
+            "id": "honorario_elegido",
+            "label": "Honorario a cobrar ($) — entre mín y máx",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "rango_libre",
+        "formula": {
+          "minimo_UR": 12,
+          "maximo_UR": 40
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Entre 12 y 40 UR."
+      },
+      {
+        "codigo": "EXP03",
+        "nombre": "Estatutos SA (Expediente)",
+        "articulo": "Art. 15°.C",
+        "grupo": "otros",
+        "descripcion": "Expediente para para estatutos de Sociedad Anónima.",
+        "variables": [
+          {
+            "id": "honorario_elegido",
+            "label": "Honorario a cobrar ($) — entre mín y máx",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "rango_libre",
+        "formula": {
+          "minimo_UR": 24,
+          "maximo_UR": 200
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Entre 24 y 200 UR."
+      },
+      {
+        "codigo": "AUT01",
+        "nombre": "Compraventa de Vehículo Automotor",
+        "articulo": "Art. 1.II.A y Art. 20.Ñ",
+        "grupo": "automotores",
+        "descripcion": "Título de transferencia de dominio de un vehículo automotor. Se cobra el 2% sobre el valor del vehículo, con mínimos escalonados según el valor en UR.",
+        "variables": [
+          {
+            "id": "precio",
+            "label": "Precio de venta o valor de mercado ($)",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "compraventa_automotor",
+        "formula": {
+          "tasa": 0.02
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Honorario: 2% del precio del vehículo. Aplican mínimos según el valor base en UR: menos de 200 UR -> Mínimo 6 UR; entre 201 y 400 UR -> Mínimo 8 UR; más de 400 UR -> Mínimo 12 UR (Art. 20.Ñ).",
+        "reducciones_aplicables": [
+          "RED_O"
+        ]
+      },
+      {
+        "codigo": "AUT02",
+        "nombre": "Compraventa de Motocicleta",
+        "articulo": "Art. 1.II.A y Art. 20.N",
+        "grupo": "automotores",
+        "descripcion": "Título de transferencia de dominio de una motocicleta, ciclomotor, tractor, trailer, etc. Se cobra el 2% sobre el valor base.",
+        "variables": [
+          {
+            "id": "precio",
+            "label": "Precio de venta o valor de mercado ($)",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "compraventa_moto",
+        "formula": {
+          "tasa": 0.02
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Honorario: 2% del precio. Para motocicletas de hasta 250 cc, ciclomotores, trailers, remolques, tractores, chasis y motores cuyo valor base sea menor a 250 UR, el mínimo es 6 UR (Art. 20.N). De lo contrario, aplica el mínimo general de 12 UR."
+      },
+      {
+        "codigo": "AUT03",
+        "nombre": "Prenda de Automotor (Certificación de Firmas)",
+        "articulo": "Art. 20.C",
+        "grupo": "automotores",
+        "descripcion": "Certificación de firmas en contrato de prenda de vehículos automotores.",
+        "variables": [
+          {
+            "id": "honorario_elegido",
+            "label": "Honorario a cobrar ($) — entre mín y máx",
+            "tipo": "monto",
+            "obligatorio": true
+          }
+        ],
+        "motor": "rango_libre",
+        "formula": {
+          "minimo_UR": 3,
+          "maximo_UR": 40
+        },
+        "tributos": {
+          "IVA": true,
+          "montepio": true,
+          "fondo_gremial": true
+        },
+        "notas": "Rango de cobro a criterio del escribano entre 3 y 40 UR si solo se certifican firmas (Art. 20.C)."
+      }
+    ]
+  }
+}
