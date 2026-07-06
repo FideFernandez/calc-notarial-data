@@ -1,20 +1,20 @@
 {
-  "_version": "2026.06",
-  "_generado": "2026-06-18T22:23:26.445Z",
+  "_version": "2026.07",
+  "_generado": "2026-07-06T23:07:19.070Z",
   "parametros": {
     "_info": "Calculadora Notarial Uruguay - Parámetros del Sistema",
-    "_version": "2026.06",
-    "_ultima_actualizacion": "2026-06-01",
+    "_version": "2026.07",
+    "_ultima_actualizacion": "2026-07-01",
     "indices": {
       "UR": {
-        "valor": 1921.36,
-        "descripcion": "Unidad Reajustable - junio 2026",
+        "valor": 1922.68,
+        "descripcion": "Unidad Reajustable - julio 2026",
         "fuente": "INE / IMPO",
         "editable": true
       },
       "UI": {
         "valor": 6.47,
-        "descripcion": "Unidad Indexada - junio 2026",
+        "descripcion": "Unidad Indexada - julio 2026",
         "fuente": "BCU / IMPO",
         "editable": true
       },
