@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad · Calculadora Notarial Uruguay</title>
+  <meta name="description" content="Política de privacidad de la app Calculadora Notarial Uruguay." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap">
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .privacy-page { max-width: 720px; margin: 0 auto; padding: 60px 20px 100px; }
+    .privacy-back { display: inline-flex; align-items: center; gap: 6px; color: var(--gold); font-size: 13px; font-weight: 600; margin-bottom: 40px; text-decoration: none; opacity: 0.85; }
+    .privacy-back:hover { opacity: 1; }
+    .privacy-titulo { font-family: 'Playfair Display', serif; font-size: clamp(26px, 4vw, 38px); font-weight: 700; color: var(--text); margin-bottom: 8px; }
+    .privacy-fecha { font-size: 13px; color: var(--text-muted); margin-bottom: 40px; }
+    .privacy-section { margin-bottom: 36px; }
+    .privacy-section h2 { font-size: 17px; font-weight: 700; color: var(--gold); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.04em; }
+    .privacy-section p, .privacy-section li { font-size: 15px; color: var(--text-2); line-height: 1.8; margin-bottom: 10px; }
+    .privacy-section ul { padding-left: 20px; }
+    .privacy-section li { margin-bottom: 6px; }
+    .privacy-contact { background: var(--bg-card); border: 1px solid var(--gold-border); border-radius: 12px; padding: 24px; margin-top: 40px; }
+    .privacy-contact p { color: var(--text-2); font-size: 14px; margin-bottom: 6px; }
+    hr.divider { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-brand">
+        <span class="brand-logo">⚖️</span>
+        <div>
+          <div class="brand-name">Calc. Notarial</div>
+          <div class="brand-sub">Uruguay · AEU 2026</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="privacy-page">
+
+    <a href="index.html" class="privacy-back">← Volver al inicio</a>
+
+    <h1 class="privacy-titulo">Política de Privacidad</h1>
+    <p class="privacy-fecha">Última actualización: junio de 2026</p>
+
+    <div class="privacy-section">
+      <p>
+        Esta Política de Privacidad describe cómo <strong>Calculadora Notarial Uruguay</strong>
+        ("la app", "nosotros") recopila, usa y protege la información de los usuarios.
+        Al usar la app, aceptás estas condiciones.
+      </p>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="privacy-section">
+      <h2>1. Información que recopilamos</h2>
+      <p>La app recopila la mínima información posible para funcionar:</p>
+      <ul>
+        <li><strong>Datos de uso local:</strong> Parámetros (UR, UI, USD), actuaciones seleccionadas e historial de cálculos. Se almacenan exclusivamente en el dispositivo del usuario mediante <code>localStorage</code> y nunca son transmitidos a servidores externos.</li>
+        <li><strong>Información de licencia:</strong> El estado de la licencia Pro (tipo, fecha de activación) se guarda localmente en el dispositivo. No se vincula a datos personales identificables.</li>
+        <li><strong>Compras en Google Play (usuarios Pro):</strong> Las suscripciones son procesadas íntegramente por Google Play Billing y RevenueCat. No almacenamos datos de tarjetas de crédito ni información de pago. Consultá la <a href="https://policies.google.com/privacy" target="_blank" style="color:var(--gold)">Política de Privacidad de Google</a> y la de <a href="https://www.revenuecat.com/privacy" target="_blank" style="color:var(--gold)">RevenueCat</a>.</li>
+      </ul>
+    </div>
+
+    <div class="privacy-section">
+      <h2>2. Información que NO recopilamos</h2>
+      <ul>
+        <li>No recopilamos nombre, dirección de correo electrónico ni datos de contacto.</li>
+        <li>No usamos cookies de rastreo ni publicidad.</li>
+        <li>No compartimos datos con terceros para fines publicitarios.</li>
+        <li>No accedemos a cámara, micrófono, contactos ni ubicación.</li>
+        <li>Los valores ingresados en los formularios de cálculo (montos, superficies, etc.) nunca salen del dispositivo.</li>
+      </ul>
+    </div>
+
+    <div class="privacy-section">
+      <h2>3. Actualizaciones de datos (conexión a internet)</h2>
+      <p>
+        La app puede conectarse opcionalmente a internet para:
+      </p>
+      <ul>
+        <li><strong>Actualizar índices económicos</strong> (UI, USD) desde la API pública de <a href="https://uy.dolarapi.com" target="_blank" style="color:var(--gold)">uy.dolarapi.com</a>.</li>
+        <li><strong>Descargar actualizaciones de datos arancelarios</strong> desde un repositorio de GitHub Pages.</li>
+      </ul>
+      <p>
+        Estas conexiones son de solo lectura. No se envía ningún dato del usuario en estas solicitudes.
+      </p>
+    </div>
+
+    <div class="privacy-section">
+      <h2>4. Permisos de la app</h2>
+      <ul>
+        <li><strong>INTERNET:</strong> Requerido para actualizaciones opcionales de datos y billing.</li>
+        <li><strong>BILLING:</strong> Requerido para suscripciones Pro a través de Google Play.</li>
+        <li><strong>VIBRATE:</strong> Para feedback háptico al interactuar con la app (opcional).</li>
+      </ul>
+      <p>La app no solicita ningún otro permiso del sistema.</p>
+    </div>
+
+    <div class="privacy-section">
+      <h2>5. Seguridad de los datos</h2>
+      <p>
+        Dado que los datos de la app se almacenan exclusivamente en el dispositivo del usuario,
+        la seguridad de esos datos depende de la seguridad del propio dispositivo.
+        Recomendamos mantener el dispositivo con contraseña o biometría habilitada.
+      </p>
+    </div>
+
+    <div class="privacy-section">
+      <h2>6. Menores de edad</h2>
+      <p>
+        La app está diseñada para uso profesional por escribanos y estudiantes de notariado.
+        No está dirigida a menores de 18 años ni recopila información de menores.
+      </p>
+    </div>
+
+    <div class="privacy-section">
+      <h2>7. Cambios a esta política</h2>
+      <p>
+        Podemos actualizar esta Política de Privacidad en cualquier momento.
+        Los cambios se publicarán en esta página con una nueva fecha de actualización.
+        El uso continuado de la app después de un cambio implica la aceptación de la nueva política.
+      </p>
+    </div>
+
+    <div class="privacy-section">
+      <h2>8. Legislación aplicable</h2>
+      <p>
+        Esta política se rige por las leyes de la República Oriental del Uruguay,
+        incluyendo la <strong>Ley N° 18.331</strong> de Protección de Datos Personales y la
+        normativa complementaria de la <strong>AGESIC</strong>.
+      </p>
+    </div>
+
+    <div class="privacy-contact">
+      <h2 style="font-size:15px;font-weight:700;color:var(--gold);margin-bottom:12px;text-transform:uppercase;letter-spacing:0.04em;">Contacto</h2>
+      <p>Si tenés preguntas sobre esta Política de Privacidad, podés contactarnos:</p>
+      <p>📧 <strong>Email:</strong> <a href="mailto:soporte.escribas@gmail.com" style="color:var(--gold)">soporte.escribas@gmail.com</a></p>
+      <p style="margin-top:10px;font-size:12px;opacity:0.6">Calculadora Notarial Uruguay · República Oriental del Uruguay</p>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">⚖️ Calculadora Notarial Uruguay</div>
+      <p class="footer-legal">Herramienta orientativa. El profesional es responsable de verificar los resultados.</p>
+      <p class="footer-copy">© 2026 · Uruguay</p>
+    </div>
+  </footer>
+
+</body>
+</html>
