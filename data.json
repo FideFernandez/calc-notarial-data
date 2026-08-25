@@ -1,6 +1,4 @@
 {
-  "_version": "2026.07",
-  "_generado": "2026-07-06T23:07:19.070Z",
   "parametros": {
     "_info": "Calculadora Notarial Uruguay - Parámetros del Sistema",
     "_version": "2026.07",
@@ -193,194 +191,6 @@
       "editable": true
     }
   },
-  "reducciones": {
-    "_info": "Reducciones Arancelarias - Arancel Notarial Uruguayo Actualizado a Oct 2025",
-    "_articulo": "Artículo 20",
-    "reducciones": [
-      {
-        "codigo": "RED_A",
-        "literal": "A",
-        "descripcion": "BHU – Vivienda de interés social permanente",
-        "reduccion": "Honorarios reducidos según tabla BHU",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_B",
-        "literal": "B",
-        "descripcion": "Inmuebles con VR inferior a 200 UR",
-        "reduccion": "Reducción de honorarios para inmuebles de bajo valor",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_C",
-        "literal": "C",
-        "descripcion": "Contratos accesorios al principal",
-        "reduccion": "50% del honorario cuando el contrato accesorio se otorga simultáneamente al principal",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_D",
-        "literal": "D",
-        "descripcion": "Refinanciaciones",
-        "reduccion": "Reducción sobre honorarios de hipotecas refinanciadas",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_E",
-        "literal": "E",
-        "descripcion": "Contrato definitivo posterior a promesa",
-        "reduccion": "Descuento del honorario de promesa ya pagado al liquidar el definitivo",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_F",
-        "literal": "F",
-        "descripcion": "Actas para previsión social",
-        "reduccion": "Honorario mínimo de 2 UR",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_G",
-        "literal": "G",
-        "descripcion": "MEVIR",
-        "reduccion": "Reducción especial para actuaciones de MEVIR",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_H",
-        "literal": "H",
-        "descripcion": "Leasing de transporte",
-        "reduccion": "Reducción arancelaria para contratos de leasing de vehículos de transporte",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_I_T1",
-        "literal": "I (Tipo I)",
-        "descripcion": "SIAV Tipo I (Reducción 50%)",
-        "reduccion": "Reducción del 50% de honorarios para Vivienda Tipo I del SIAV",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_I_T2",
-        "literal": "I (Tipo II)",
-        "descripcion": "SIAV Tipo II (Reducción 37%)",
-        "reduccion": "Reducción del 37% de honorarios para Vivienda Tipo II del SIAV",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_I_T3",
-        "literal": "I (Tipo III)",
-        "descripcion": "SIAV Tipo III (Reducción 25%)",
-        "reduccion": "Reducción del 25% de honorarios para Vivienda Tipo III del SIAV",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_J",
-        "literal": "J",
-        "descripcion": "Gravámenes hipotecarios en determinadas circunstancias",
-        "reduccion": "Reducción aplicable a hipotecas con condiciones especiales",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_K",
-        "literal": "K",
-        "descripcion": "Hipotecas MVOT",
-        "reduccion": "Reducción para hipotecas del Ministerio de Vivienda",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_L",
-        "literal": "L",
-        "descripcion": "Rescisión de arrendamiento rural",
-        "reduccion": "Honorario reducido para rescisiones de arrendamiento rural",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_M",
-        "literal": "M",
-        "descripcion": "Carta de pago por importe menor a 350 UR",
-        "reduccion": "Honorario mínimo reducido para cartas de pago pequeñas",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_N",
-        "literal": "N",
-        "descripcion": "Motocicletas y vehículos similares",
-        "reduccion": "Tarifa reducida para motos",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_Ñ",
-        "literal": "Ñ",
-        "descripcion": "Vehículos automotores",
-        "reduccion": "Honorario especial para transmisiones de vehículos",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_O",
-        "literal": "O",
-        "descripcion": "Compra por automotoras",
-        "reduccion": "Reducción para empresas que compran vehículos al por mayor",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_P",
-        "literal": "P",
-        "descripcion": "PIAI – Programa de Integración de Asentamientos Irregulares",
-        "reduccion": "Reducción para regularización de asentamientos",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_Q",
-        "literal": "Q",
-        "descripcion": "BHU/ANV al 0,9% – Vigente hasta 1° agosto 2027",
-        "reduccion": "Honorario del 0,9% para operaciones BHU/ANV específicas. Vigente hasta el 1° de agosto de 2027.",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_R",
-        "literal": "R",
-        "descripcion": "Gobiernos Departamentales",
-        "reduccion": "Reducción para actuaciones donde intervienen Intendencias",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_S",
-        "literal": "S",
-        "descripcion": "Cooperativas sociales",
-        "reduccion": "Reducción arancelaria para cooperativas sociales",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_T",
-        "literal": "T",
-        "descripcion": "MVOT – Ministerio de Vivienda",
-        "reduccion": "Reducción para actuaciones de planes MVOT",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_U",
-        "literal": "U",
-        "descripcion": "Fideicomisos de garantía y administración",
-        "reduccion": "Escala especial para fideicomisos",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_V",
-        "literal": "V",
-        "descripcion": "CGN/MVOT – Arrendamientos",
-        "reduccion": "Reducción para arrendamientos mediados por el Estado",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_W",
-        "literal": "W",
-        "descripcion": "PMB – Plan Mi Barrio",
-        "reduccion": "Reducción para actuaciones del Plan Mi Barrio",
-        "activa_por_defecto": false
-      }
-    ]
-  },
   "actuaciones": {
     "_info": "Catálogo de Actuaciones Notariales - Uruguay 2026",
     "_version": "2026.06",
@@ -449,13 +259,15 @@
             "id": "precio",
             "label": "Precio de venta ($)",
             "tipo": "monto",
-            "obligatorio": true
+            "obligatorio": true,
+            "ayuda": "Precio pactado en la escritura."
           },
           {
             "id": "valor_real",
             "label": "Valor real actualizado ($)",
             "tipo": "monto",
-            "obligatorio": true
+            "obligatorio": true,
+            "ayuda": "Valor catastral del inmueble según DNC. Base para ITP e Imp. Primaria."
           },
           {
             "id": "doble_escrit",
@@ -473,6 +285,18 @@
             "id": "_sec_irpf",
             "tipo": "seccion",
             "label": "📊 IRPF por Incrementos Patrimoniales (Vendedor)"
+          },
+          {
+            "id": "irpf_vendedor_aplica",
+            "label": "¿Aplica IRPF Vendedor?",
+            "tipo": "select",
+            "opciones": [
+              "si",
+              "no_vivienda",
+              "no_vendedor_pj",
+              "no_sin_incremento"
+            ],
+            "obligatorio": false
           },
           {
             "id": "adq_antes_2007",
@@ -585,7 +409,8 @@
             "id": "valor_real",
             "label": "Valor real del inmueble ($)",
             "tipo": "monto",
-            "obligatorio": true
+            "obligatorio": true,
+            "ayuda": "Valor catastral del inmueble. Base para honorario, ITP y Primaria."
           },
           {
             "id": "porcentaje_bhu",
@@ -668,13 +493,15 @@
             "id": "valor_inmueble_a",
             "label": "Valor inmueble A ($)",
             "tipo": "monto",
-            "obligatorio": true
+            "obligatorio": true,
+            "ayuda": "Valor catastral del inmueble A. Se usa para ITP y Primaria."
           },
           {
             "id": "valor_inmueble_b",
             "label": "Valor inmueble B ($)",
             "tipo": "monto",
-            "obligatorio": true
+            "obligatorio": true,
+            "ayuda": "Valor catastral del inmueble B. Se usa para ITP y Primaria."
           },
           {
             "id": "tipo_acto_mvot",
@@ -708,6 +535,7 @@
         "tributos": {
           "IVA": true,
           "ITP": true,
+          "Primaria": true,
           "FRL": false,
           "montepio": true,
           "fondo_gremial": true
@@ -847,7 +675,8 @@
             "id": "capital_garantizado",
             "label": "Capital garantizado ($)",
             "tipo": "monto",
-            "obligatorio": true
+            "obligatorio": true,
+            "ayuda": "Capital que se garantiza con la hipoteca. No es el valor del inmueble."
           },
           {
             "id": "plazo_meses",
@@ -915,7 +744,8 @@
             "id": "capital_cancelado",
             "label": "Capital cancelado ($)",
             "tipo": "monto",
-            "obligatorio": true
+            "obligatorio": true,
+            "ayuda": "Monto del capital hipotecario que se cancela o levanta."
           }
         ],
         "motor": "porcentaje_simple",
@@ -945,7 +775,8 @@
             "id": "valor_patrimonio_fideicomitido",
             "label": "Valor del patrimonio fideicomitido ($)",
             "tipo": "monto",
-            "obligatorio": true
+            "obligatorio": true,
+            "ayuda": "Valor total de los bienes transferidos al fideicomiso."
           }
         ],
         "motor": "porcentaje_simple",
@@ -976,13 +807,15 @@
             "id": "cantidad_unidades",
             "label": "Cantidad de unidades",
             "tipo": "numero",
-            "obligatorio": true
+            "obligatorio": true,
+            "ayuda": "Total de unidades del edificio: apartamentos, oficinas, locales, garajes, etc."
           },
           {
             "id": "vra_total",
             "label": "Suma VRA de todas las unidades ($)",
             "tipo": "monto",
-            "obligatorio": true
+            "obligatorio": true,
+            "ayuda": "Suma de los Valores Reales Actualizados de todas las unidades."
           }
         ],
         "motor": "reglamento_copropiedad",
@@ -1024,7 +857,8 @@
             "id": "vr_nuevas_unidades",
             "label": "VR nuevas unidades ($)",
             "tipo": "monto",
-            "obligatorio": true
+            "obligatorio": true,
+            "ayuda": "Valor real de las nuevas unidades incorporadas o resultantes."
           },
           {
             "id": "cant_unid_divididas",
@@ -1066,7 +900,8 @@
             "id": "acervo_bruto",
             "label": "Acervo hereditario bruto ($)",
             "tipo": "monto",
-            "obligatorio": true
+            "obligatorio": true,
+            "ayuda": "Valor total de los bienes del causante: inmuebles + muebles + cuentas + vehículos, etc."
           },
           {
             "id": "cant_herederos",
@@ -1078,13 +913,15 @@
             "id": "valor_real_inmuebles",
             "label": "Valor real catastral total de inmuebles ($) — base ITP",
             "tipo": "monto",
-            "obligatorio": false
+            "obligatorio": false,
+            "ayuda": "Solo el valor catastral de los inmuebles heredados. Se usa para calcular el ITP."
           },
           {
             "id": "porcentaje_linea_recta",
-            "label": "% del valor de inmuebles que reciben herederos en línea recta (0–100)",
+            "label": "% herederos en línea recta (0–100)",
             "tipo": "numero",
-            "obligatorio": false
+            "obligatorio": false,
+            "ayuda": "Hijos, cónyuge y padres pagan ITP al 3%. Hermanos, sobrinos y terceros pagan 4%."
           }
         ],
         "motor": "escala_art1",
@@ -1096,6 +933,7 @@
         "tributos": {
           "IVA": true,
           "ITP": true,
+          "Primaria": true,
           "montepio": true,
           "fondo_gremial": true
         },
@@ -1112,7 +950,8 @@
             "id": "valor_masa_partible",
             "label": "Valor masa partible ($)",
             "tipo": "monto",
-            "obligatorio": true
+            "obligatorio": true,
+            "ayuda": "Valor total de los bienes a repartir entre los herederos."
           }
         ],
         "motor": "escala_art1",
@@ -1141,7 +980,8 @@
             "id": "valor_cesion",
             "label": "Valor de la cesión ($)",
             "tipo": "monto",
-            "obligatorio": true
+            "obligatorio": true,
+            "ayuda": "Precio pactado por la cesión de los derechos hereditarios. ITP: 2% cedente + 2% cesionario."
           }
         ],
         "motor": "porcentaje_simple",
@@ -2103,6 +1943,48 @@
             "label": "Precio de venta o valor de mercado ($)",
             "tipo": "monto",
             "obligatorio": true
+          },
+          {
+            "id": "seccion_irpf_aut",
+            "tipo": "seccion",
+            "label": "IRPF Vendedor"
+          },
+          {
+            "id": "irpf_vendedor_aplica",
+            "label": "¿Aplica IRPF Vendedor?",
+            "tipo": "select",
+            "opciones": [
+              "si",
+              "no_vendedor_pj",
+              "no_sin_incremento"
+            ],
+            "obligatorio": false
+          },
+          {
+            "id": "es_cero_km",
+            "label": "¿Es vehículo 0 km?",
+            "tipo": "boolean",
+            "ayuda": "Si es 0 km, el vendedor es empresa (IRAE) y no aplica IRPF persona física."
+          },
+          {
+            "id": "criterio_real_aut",
+            "label": "¿Usar criterio real para IRPF?",
+            "tipo": "boolean",
+            "dependsOn": {
+              "campo": "es_cero_km",
+              "valor": false
+            },
+            "ayuda": "Marcar si tenés el costo de adquisición en UI. Si no, se aplica ficto (2,4%)."
+          },
+          {
+            "id": "costo_adq_ui",
+            "label": "Costo de adquisición (en UI)",
+            "tipo": "numero",
+            "dependsOn": {
+              "campo": "criterio_real_aut",
+              "valor": true
+            },
+            "ayuda": "Precio que pagó el vendedor, actualizado en UI al momento de la venta."
           }
         ],
         "motor": "compraventa_automotor",
@@ -2131,6 +2013,48 @@
             "label": "Precio de venta o valor de mercado ($)",
             "tipo": "monto",
             "obligatorio": true
+          },
+          {
+            "id": "seccion_irpf_aut",
+            "tipo": "seccion",
+            "label": "IRPF Vendedor"
+          },
+          {
+            "id": "irpf_vendedor_aplica",
+            "label": "¿Aplica IRPF Vendedor?",
+            "tipo": "select",
+            "opciones": [
+              "si",
+              "no_vendedor_pj",
+              "no_sin_incremento"
+            ],
+            "obligatorio": false
+          },
+          {
+            "id": "es_cero_km",
+            "label": "¿Es vehículo 0 km?",
+            "tipo": "boolean",
+            "ayuda": "Si es 0 km, el vendedor es empresa (IRAE) y no aplica IRPF persona física."
+          },
+          {
+            "id": "criterio_real_aut",
+            "label": "¿Usar criterio real para IRPF?",
+            "tipo": "boolean",
+            "dependsOn": {
+              "campo": "es_cero_km",
+              "valor": false
+            },
+            "ayuda": "Marcar si tenés el costo de adquisición en UI. Si no, se aplica ficto (2,4%)."
+          },
+          {
+            "id": "costo_adq_ui",
+            "label": "Costo de adquisición (en UI)",
+            "tipo": "numero",
+            "dependsOn": {
+              "campo": "criterio_real_aut",
+              "valor": true
+            },
+            "ayuda": "Precio que pagó el vendedor, actualizado en UI al momento de la venta."
           }
         ],
         "motor": "compraventa_moto",
@@ -2169,6 +2093,194 @@
           "fondo_gremial": true
         },
         "notas": "Rango de cobro a criterio del escribano entre 3 y 40 UR si solo se certifican firmas (Art. 20.C)."
+      }
+    ]
+  },
+  "reducciones": {
+    "_info": "Reducciones Arancelarias - Arancel Notarial Uruguayo Actualizado a Oct 2025",
+    "_articulo": "Artículo 20",
+    "reducciones": [
+      {
+        "codigo": "RED_A",
+        "literal": "A",
+        "descripcion": "BHU – Vivienda de interés social permanente",
+        "reduccion": "Honorarios reducidos según tabla BHU",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_B",
+        "literal": "B",
+        "descripcion": "Inmuebles con VR inferior a 200 UR",
+        "reduccion": "Reducción de honorarios para inmuebles de bajo valor",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_C",
+        "literal": "C",
+        "descripcion": "Contratos accesorios al principal",
+        "reduccion": "50% del honorario cuando el contrato accesorio se otorga simultáneamente al principal",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_D",
+        "literal": "D",
+        "descripcion": "Refinanciaciones",
+        "reduccion": "Reducción sobre honorarios de hipotecas refinanciadas",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_E",
+        "literal": "E",
+        "descripcion": "Contrato definitivo posterior a promesa",
+        "reduccion": "Descuento del honorario de promesa ya pagado al liquidar el definitivo",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_F",
+        "literal": "F",
+        "descripcion": "Actas para previsión social",
+        "reduccion": "Honorario mínimo de 2 UR",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_G",
+        "literal": "G",
+        "descripcion": "MEVIR",
+        "reduccion": "Reducción especial para actuaciones de MEVIR",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_H",
+        "literal": "H",
+        "descripcion": "Leasing de transporte",
+        "reduccion": "Reducción arancelaria para contratos de leasing de vehículos de transporte",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_I_T1",
+        "literal": "I (Tipo I)",
+        "descripcion": "SIAV Tipo I (Reducción 50%)",
+        "reduccion": "Reducción del 50% de honorarios para Vivienda Tipo I del SIAV",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_I_T2",
+        "literal": "I (Tipo II)",
+        "descripcion": "SIAV Tipo II (Reducción 37%)",
+        "reduccion": "Reducción del 37% de honorarios para Vivienda Tipo II del SIAV",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_I_T3",
+        "literal": "I (Tipo III)",
+        "descripcion": "SIAV Tipo III (Reducción 25%)",
+        "reduccion": "Reducción del 25% de honorarios para Vivienda Tipo III del SIAV",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_J",
+        "literal": "J",
+        "descripcion": "Gravámenes hipotecarios en determinadas circunstancias",
+        "reduccion": "Reducción aplicable a hipotecas con condiciones especiales",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_K",
+        "literal": "K",
+        "descripcion": "Hipotecas MVOT",
+        "reduccion": "Reducción para hipotecas del Ministerio de Vivienda",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_L",
+        "literal": "L",
+        "descripcion": "Rescisión de arrendamiento rural",
+        "reduccion": "Honorario reducido para rescisiones de arrendamiento rural",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_M",
+        "literal": "M",
+        "descripcion": "Carta de pago por importe menor a 350 UR",
+        "reduccion": "Honorario mínimo reducido para cartas de pago pequeñas",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_N",
+        "literal": "N",
+        "descripcion": "Motocicletas y vehículos similares",
+        "reduccion": "Tarifa reducida para motos",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_Ñ",
+        "literal": "Ñ",
+        "descripcion": "Vehículos automotores",
+        "reduccion": "Honorario especial para transmisiones de vehículos",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_O",
+        "literal": "O",
+        "descripcion": "Compra por automotoras",
+        "reduccion": "Reducción para empresas que compran vehículos al por mayor",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_P",
+        "literal": "P",
+        "descripcion": "PIAI – Programa de Integración de Asentamientos Irregulares",
+        "reduccion": "Reducción para regularización de asentamientos",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_Q",
+        "literal": "Q",
+        "descripcion": "BHU/ANV al 0,9% – Vigente hasta 1° agosto 2027",
+        "reduccion": "Honorario del 0,9% para operaciones BHU/ANV específicas. Vigente hasta el 1° de agosto de 2027.",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_R",
+        "literal": "R",
+        "descripcion": "Gobiernos Departamentales",
+        "reduccion": "Reducción para actuaciones donde intervienen Intendencias",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_S",
+        "literal": "S",
+        "descripcion": "Cooperativas sociales",
+        "reduccion": "Reducción arancelaria para cooperativas sociales",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_T",
+        "literal": "T",
+        "descripcion": "MVOT – Ministerio de Vivienda",
+        "reduccion": "Reducción para actuaciones de planes MVOT",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_U",
+        "literal": "U",
+        "descripcion": "Fideicomisos de garantía y administración",
+        "reduccion": "Escala especial para fideicomisos",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_V",
+        "literal": "V",
+        "descripcion": "CGN/MVOT – Arrendamientos",
+        "reduccion": "Reducción para arrendamientos mediados por el Estado",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_W",
+        "literal": "W",
+        "descripcion": "PMB – Plan Mi Barrio",
+        "reduccion": "Reducción para actuaciones del Plan Mi Barrio",
+        "activa_por_defecto": false
       }
     ]
   }
