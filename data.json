@@ -1,18 +1,18 @@
 {
   "parametros": {
     "_info": "Calculadora Notarial Uruguay - Parámetros del Sistema",
-    "_version": "2026.07",
-    "_ultima_actualizacion": "2026-07-01",
+    "_version": "2026.09",
+    "_ultima_actualizacion": "2026-09-02",
     "indices": {
       "UR": {
-        "valor": 1922.68,
-        "descripcion": "Unidad Reajustable - julio 2026",
+        "valor": 1838.64,
+        "descripcion": "Unidad Reajustable - septiembre 2026",
         "fuente": "INE / IMPO",
         "editable": true
       },
       "UI": {
-        "valor": 6.47,
-        "descripcion": "Unidad Indexada - julio 2026",
+        "valor": 6.6374,
+        "descripcion": "Unidad Indexada - septiembre 2026",
         "fuente": "BCU / IMPO",
         "editable": true
       },
@@ -23,8 +23,8 @@
         "editable": true
       },
       "USD": {
-        "valor": 40.35,
-        "descripcion": "Cotización dólar estadounidense (venta) - referencia",
+        "valor": 41.45,
+        "descripcion": "Cotización dólar estadounidense (venta BROU) - septiembre 2026",
         "fuente": "BCU",
         "editable": true
       }
@@ -189,6 +189,39 @@
       "descripcion": "Fondo de Solidaridad - egresados universitarios (referencia)",
       "fuente": "https://egresados.fondodesolidaridad.edu.uy/",
       "editable": true
+    },
+    "costos_dgr": {
+      "_descripcion": "Tasas registrales DGR (Dirección General de Registros) - 2026",
+      "inscripcion_documento": {
+        "valor": 2530,
+        "descripcion": "Ingreso de documento (compraventa, promesa, hipoteca, etc.)",
+        "editable": true
+      },
+      "certificado_comun": {
+        "valor": 1265,
+        "descripcion": "Certificado registral común",
+        "editable": true
+      },
+      "certificado_urgente": {
+        "valor": 3812,
+        "descripcion": "Certificado registral urgente",
+        "editable": true
+      },
+      "certificado_ampliacion": {
+        "valor": 422,
+        "descripcion": "Ampliación de certificado registral",
+        "editable": true
+      },
+      "timbre_testamento": {
+        "valor": 2680,
+        "descripcion": "Timbre Registro de Testamentos (1er sem 2026)",
+        "editable": true
+      },
+      "rubrica_libros": {
+        "valor": 1265,
+        "descripcion": "Rúbrica de libros de comercio",
+        "editable": true
+      }
     }
   },
   "actuaciones": {
