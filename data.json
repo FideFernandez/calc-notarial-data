@@ -1,12 +1,14 @@
 {
+  "_version": "2026.10",
+  "_generado": "2026-10-06T23:34:06.521Z",
   "parametros": {
     "_info": "Calculadora Notarial Uruguay - Parámetros del Sistema",
-    "_version": "2026.09",
-    "_ultima_actualizacion": "2026-09-02",
+    "_version": "2026.10",
+    "_ultima_actualizacion": "2026-10-06",
     "indices": {
       "UR": {
-        "valor": 1838.64,
-        "descripcion": "Unidad Reajustable - septiembre 2026",
+        "valor": 1940.77,
+        "descripcion": "Unidad Reajustable - octubre 2026",
         "fuente": "INE / IMPO",
         "editable": true
       },
@@ -223,6 +225,194 @@
         "editable": true
       }
     }
+  },
+  "reducciones": {
+    "_info": "Reducciones Arancelarias - Arancel Notarial Uruguayo Actualizado a Oct 2025",
+    "_articulo": "Artículo 20",
+    "reducciones": [
+      {
+        "codigo": "RED_A",
+        "literal": "A",
+        "descripcion": "BHU – Vivienda de interés social permanente",
+        "reduccion": "Honorarios reducidos según tabla BHU",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_B",
+        "literal": "B",
+        "descripcion": "Inmuebles con VR inferior a 200 UR",
+        "reduccion": "Reducción de honorarios para inmuebles de bajo valor",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_C",
+        "literal": "C",
+        "descripcion": "Contratos accesorios al principal",
+        "reduccion": "50% del honorario cuando el contrato accesorio se otorga simultáneamente al principal",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_D",
+        "literal": "D",
+        "descripcion": "Refinanciaciones",
+        "reduccion": "Reducción sobre honorarios de hipotecas refinanciadas",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_E",
+        "literal": "E",
+        "descripcion": "Contrato definitivo posterior a promesa",
+        "reduccion": "Descuento del honorario de promesa ya pagado al liquidar el definitivo",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_F",
+        "literal": "F",
+        "descripcion": "Actas para previsión social",
+        "reduccion": "Honorario mínimo de 2 UR",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_G",
+        "literal": "G",
+        "descripcion": "MEVIR",
+        "reduccion": "Reducción especial para actuaciones de MEVIR",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_H",
+        "literal": "H",
+        "descripcion": "Leasing de transporte",
+        "reduccion": "Reducción arancelaria para contratos de leasing de vehículos de transporte",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_I_T1",
+        "literal": "I (Tipo I)",
+        "descripcion": "SIAV Tipo I (Reducción 50%)",
+        "reduccion": "Reducción del 50% de honorarios para Vivienda Tipo I del SIAV",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_I_T2",
+        "literal": "I (Tipo II)",
+        "descripcion": "SIAV Tipo II (Reducción 37%)",
+        "reduccion": "Reducción del 37% de honorarios para Vivienda Tipo II del SIAV",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_I_T3",
+        "literal": "I (Tipo III)",
+        "descripcion": "SIAV Tipo III (Reducción 25%)",
+        "reduccion": "Reducción del 25% de honorarios para Vivienda Tipo III del SIAV",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_J",
+        "literal": "J",
+        "descripcion": "Gravámenes hipotecarios en determinadas circunstancias",
+        "reduccion": "Reducción aplicable a hipotecas con condiciones especiales",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_K",
+        "literal": "K",
+        "descripcion": "Hipotecas MVOT",
+        "reduccion": "Reducción para hipotecas del Ministerio de Vivienda",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_L",
+        "literal": "L",
+        "descripcion": "Rescisión de arrendamiento rural",
+        "reduccion": "Honorario reducido para rescisiones de arrendamiento rural",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_M",
+        "literal": "M",
+        "descripcion": "Carta de pago por importe menor a 350 UR",
+        "reduccion": "Honorario mínimo reducido para cartas de pago pequeñas",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_N",
+        "literal": "N",
+        "descripcion": "Motocicletas y vehículos similares",
+        "reduccion": "Tarifa reducida para motos",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_Ñ",
+        "literal": "Ñ",
+        "descripcion": "Vehículos automotores",
+        "reduccion": "Honorario especial para transmisiones de vehículos",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_O",
+        "literal": "O",
+        "descripcion": "Compra por automotoras",
+        "reduccion": "Reducción para empresas que compran vehículos al por mayor",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_P",
+        "literal": "P",
+        "descripcion": "PIAI – Programa de Integración de Asentamientos Irregulares",
+        "reduccion": "Reducción para regularización de asentamientos",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_Q",
+        "literal": "Q",
+        "descripcion": "BHU/ANV al 0,9% – Vigente hasta 1° agosto 2027",
+        "reduccion": "Honorario del 0,9% para operaciones BHU/ANV específicas. Vigente hasta el 1° de agosto de 2027.",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_R",
+        "literal": "R",
+        "descripcion": "Gobiernos Departamentales",
+        "reduccion": "Reducción para actuaciones donde intervienen Intendencias",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_S",
+        "literal": "S",
+        "descripcion": "Cooperativas sociales",
+        "reduccion": "Reducción arancelaria para cooperativas sociales",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_T",
+        "literal": "T",
+        "descripcion": "MVOT – Ministerio de Vivienda",
+        "reduccion": "Reducción para actuaciones de planes MVOT",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_U",
+        "literal": "U",
+        "descripcion": "Fideicomisos de garantía y administración",
+        "reduccion": "Escala especial para fideicomisos",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_V",
+        "literal": "V",
+        "descripcion": "CGN/MVOT – Arrendamientos",
+        "reduccion": "Reducción para arrendamientos mediados por el Estado",
+        "activa_por_defecto": false
+      },
+      {
+        "codigo": "RED_W",
+        "literal": "W",
+        "descripcion": "PMB – Plan Mi Barrio",
+        "reduccion": "Reducción para actuaciones del Plan Mi Barrio",
+        "activa_por_defecto": false
+      }
+    ]
   },
   "actuaciones": {
     "_info": "Catálogo de Actuaciones Notariales - Uruguay 2026",
@@ -2126,194 +2316,6 @@
           "fondo_gremial": true
         },
         "notas": "Rango de cobro a criterio del escribano entre 3 y 40 UR si solo se certifican firmas (Art. 20.C)."
-      }
-    ]
-  },
-  "reducciones": {
-    "_info": "Reducciones Arancelarias - Arancel Notarial Uruguayo Actualizado a Oct 2025",
-    "_articulo": "Artículo 20",
-    "reducciones": [
-      {
-        "codigo": "RED_A",
-        "literal": "A",
-        "descripcion": "BHU – Vivienda de interés social permanente",
-        "reduccion": "Honorarios reducidos según tabla BHU",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_B",
-        "literal": "B",
-        "descripcion": "Inmuebles con VR inferior a 200 UR",
-        "reduccion": "Reducción de honorarios para inmuebles de bajo valor",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_C",
-        "literal": "C",
-        "descripcion": "Contratos accesorios al principal",
-        "reduccion": "50% del honorario cuando el contrato accesorio se otorga simultáneamente al principal",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_D",
-        "literal": "D",
-        "descripcion": "Refinanciaciones",
-        "reduccion": "Reducción sobre honorarios de hipotecas refinanciadas",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_E",
-        "literal": "E",
-        "descripcion": "Contrato definitivo posterior a promesa",
-        "reduccion": "Descuento del honorario de promesa ya pagado al liquidar el definitivo",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_F",
-        "literal": "F",
-        "descripcion": "Actas para previsión social",
-        "reduccion": "Honorario mínimo de 2 UR",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_G",
-        "literal": "G",
-        "descripcion": "MEVIR",
-        "reduccion": "Reducción especial para actuaciones de MEVIR",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_H",
-        "literal": "H",
-        "descripcion": "Leasing de transporte",
-        "reduccion": "Reducción arancelaria para contratos de leasing de vehículos de transporte",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_I_T1",
-        "literal": "I (Tipo I)",
-        "descripcion": "SIAV Tipo I (Reducción 50%)",
-        "reduccion": "Reducción del 50% de honorarios para Vivienda Tipo I del SIAV",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_I_T2",
-        "literal": "I (Tipo II)",
-        "descripcion": "SIAV Tipo II (Reducción 37%)",
-        "reduccion": "Reducción del 37% de honorarios para Vivienda Tipo II del SIAV",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_I_T3",
-        "literal": "I (Tipo III)",
-        "descripcion": "SIAV Tipo III (Reducción 25%)",
-        "reduccion": "Reducción del 25% de honorarios para Vivienda Tipo III del SIAV",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_J",
-        "literal": "J",
-        "descripcion": "Gravámenes hipotecarios en determinadas circunstancias",
-        "reduccion": "Reducción aplicable a hipotecas con condiciones especiales",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_K",
-        "literal": "K",
-        "descripcion": "Hipotecas MVOT",
-        "reduccion": "Reducción para hipotecas del Ministerio de Vivienda",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_L",
-        "literal": "L",
-        "descripcion": "Rescisión de arrendamiento rural",
-        "reduccion": "Honorario reducido para rescisiones de arrendamiento rural",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_M",
-        "literal": "M",
-        "descripcion": "Carta de pago por importe menor a 350 UR",
-        "reduccion": "Honorario mínimo reducido para cartas de pago pequeñas",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_N",
-        "literal": "N",
-        "descripcion": "Motocicletas y vehículos similares",
-        "reduccion": "Tarifa reducida para motos",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_Ñ",
-        "literal": "Ñ",
-        "descripcion": "Vehículos automotores",
-        "reduccion": "Honorario especial para transmisiones de vehículos",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_O",
-        "literal": "O",
-        "descripcion": "Compra por automotoras",
-        "reduccion": "Reducción para empresas que compran vehículos al por mayor",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_P",
-        "literal": "P",
-        "descripcion": "PIAI – Programa de Integración de Asentamientos Irregulares",
-        "reduccion": "Reducción para regularización de asentamientos",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_Q",
-        "literal": "Q",
-        "descripcion": "BHU/ANV al 0,9% – Vigente hasta 1° agosto 2027",
-        "reduccion": "Honorario del 0,9% para operaciones BHU/ANV específicas. Vigente hasta el 1° de agosto de 2027.",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_R",
-        "literal": "R",
-        "descripcion": "Gobiernos Departamentales",
-        "reduccion": "Reducción para actuaciones donde intervienen Intendencias",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_S",
-        "literal": "S",
-        "descripcion": "Cooperativas sociales",
-        "reduccion": "Reducción arancelaria para cooperativas sociales",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_T",
-        "literal": "T",
-        "descripcion": "MVOT – Ministerio de Vivienda",
-        "reduccion": "Reducción para actuaciones de planes MVOT",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_U",
-        "literal": "U",
-        "descripcion": "Fideicomisos de garantía y administración",
-        "reduccion": "Escala especial para fideicomisos",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_V",
-        "literal": "V",
-        "descripcion": "CGN/MVOT – Arrendamientos",
-        "reduccion": "Reducción para arrendamientos mediados por el Estado",
-        "activa_por_defecto": false
-      },
-      {
-        "codigo": "RED_W",
-        "literal": "W",
-        "descripcion": "PMB – Plan Mi Barrio",
-        "reduccion": "Reducción para actuaciones del Plan Mi Barrio",
-        "activa_por_defecto": false
       }
     ]
   }
